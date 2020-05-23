@@ -1,0 +1,40 @@
+body {
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: MintCream;
+}
+
+.wrapper {
+    padding: 0 1rem;
+    padding-top: 2rem;
+}
+
+.form {
+    max-width: 375px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-title {
+    padding-bottom: 1rem;
+    font-size: larger;
+}
+
+#input-number {
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+span {
+    font-size: x-large;
+}
+
+span::before {
+    margin: 0 15px;
+    content: url('./tag-open.png');
+}
+
+span::after {
+    margin: 0 15px;
+    content: url('./tag-close.png');
+}
