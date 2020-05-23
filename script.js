@@ -34,7 +34,7 @@ const addSpanEl = (count) => {
     if ( i === count || (i > 1 && (i % countAddSpanLines) === 0 && getScroll('Height'))) {
       countSpan = count - i;
       loadedSpan.innerText = document.getElementsByClassName('span').length;  //Почему-то в Opera неправильно считалось количество при использовании 
-                                                                              //getElementsByTag.length, заменил на getElementsByClassName.length
+                                                                              //getElementsByTagName.length, заменил на getElementsByClassName.length
     
       //console.log(countSpan, i, count);
       return;
