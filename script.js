@@ -19,7 +19,7 @@ input.onchange = function changeInput(e) {
   addSpanEl(count);
 }
 
-const addSpanEl = function (count) {
+const addSpanEl = (count) => {
 
   for (let i = 1; i < count + 1; i++) {
     const elem = document.createElement('span');
@@ -40,7 +40,7 @@ window.addEventListener('scroll' || 'resize', function() {
   if (visibleLastSpan(output.lastChild)) addSpanEl(countSpan);
 });
 
-const visibleLastSpan = function (target) {
+const visibleLastSpan = (target) => {
   const targetPosition = window.pageYOffset + target.getBoundingClientRect().top;
   const windowPosition = window.pageYOffset + document.documentElement.clientHeight;
 
