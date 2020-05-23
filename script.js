@@ -11,7 +11,7 @@ input.onchange = changeInput = (e) => {
   
   const count = +e.target.value;
 
-  if (count < 1 || !((count ^ 0) === count) ) return;
+  if (count < 0 || !((count ^ 0) === count) ) return;
   
   while (output.firstChild) {
     output.removeChild(output.lastChild);
