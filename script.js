@@ -28,11 +28,12 @@ const addSpanEl = (count) => {
     
     output.appendChild(elem);
     elem.innerHTML = getRandom(minRnd, maxRnd);
+    elem.classList.add('span');
     output.appendChild(document.createElement('br'));
 
     if ( i === count || (i > 1 && (i % countAddSpanLines) === 0 && getScroll('Height'))) {
       countSpan = count - i;
-      loadedSpan.innerText = document.getElementsByTagName('span').length;
+      loadedSpan.innerText = document.getElementsByClassName('span').length;
     
       //console.log(countSpan, i, count);
       return;
