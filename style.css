@@ -31,10 +31,10 @@ span {
 
 span::before {
     margin: 0 15px;
-    content: url('./tag-open.png');
+    content: url('./img/tag-open.png');
 }
 
 span::after {
     margin: 0 15px;
-    content: url('./tag-close.png');
+    content: url('./img/tag-close.png');
 }
