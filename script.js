@@ -7,7 +7,7 @@ const countAddSpanLines = 20; //сколько будем добавлять с�
 const minRnd = 0;
 const maxRnd = 9;
 
-input.onchange = function changeInput(e) {
+input.onchange = changeInput = (e) => {
   
   const count = +e.target.value;
 
@@ -49,11 +49,11 @@ const visibleLastSpan = (target) => {
   };
 };
 
-function getRandom(min, max) {
+const getRandom = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function getScroll(a) {
+const getScroll = (a) => {
   var d = document,
       b = d.body,
       e = d.documentElement,
