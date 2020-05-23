@@ -1,11 +1,14 @@
 body {
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: MintCream;
+    margin: 0;
 }
 
-.wrapper {
-    padding: 0 1rem;
+.fix {
+    position: fixed;
     padding-top: 2rem;
+    background-color: MintCream;
+    z-index: 10;
 }
 
 .form {
@@ -14,15 +17,30 @@ body {
     text-align: center;
 }
 
+#loaded-span {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+    color: #7d7c7c;
+}
+#loaded-span-val {
+    margin-left: 0.5rem;
+}
+
 .form-title {
     padding-bottom: 1rem;
     font-size: larger;
 }
 
 #input-number {
+    width: 325px;
     font-size: x-large;
     text-align: center;
-    margin-bottom: 1rem;
+    margin: 0 25px 1rem;
+}
+
+#output-span {
+    padding-top: 9rem;
 }
 
 span {

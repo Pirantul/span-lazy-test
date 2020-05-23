@@ -7,15 +7,19 @@
         <link rel=stylesheet href=style.css>
     </head>
     <body>
-        <div class='wrapper'>
-            <div class='form'>
+        <div class='form'>
+            <div class="fix">
+                <div id="loaded-span">
+                    <div id="loaded-span-title">Loaded spans: </div>
+                    <div id="loaded-span-val">0</div>
+                </div>
                 <div class='form-title'>Enter natural number:</div>
                 <form id="test-form" onsubmit="return false">
                     <input id="input-number" type="number" min="0">
                 </form>
-                <div id="output-span"></div>
-                <script src="script.js"></script>
             </div>
+            <div id="output-span"></div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

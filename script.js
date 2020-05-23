@@ -1,11 +1,12 @@
 
-const input = document.getElementById('input-number');
-const output = document.getElementById('output-span');
-let countSpan = 0;
-
 const countAddSpanLines = 20; //сколько будем добавлять строк до ленивой подгрузки
 const minRnd = 0;
 const maxRnd = 9;
+
+const input = document.getElementById('input-number');
+const output = document.getElementById('output-span');
+const loadedSpan = document.getElementById('loaded-span-val');
+let countSpan;
 
 input.onchange = changeInput = (e) => {
   
@@ -24,12 +25,15 @@ const addSpanEl = (count) => {
   for (let i = 1; i < count + 1; i++) {
     const elem = document.createElement('span');
     
+    
     output.appendChild(elem);
     elem.innerHTML = getRandom(minRnd, maxRnd);
     output.appendChild(document.createElement('br'));
 
     if ( i === count || (i > 1 && (i % countAddSpanLines) === 0 && getScroll('Height'))) {
       countSpan = count - i;
+      loadedSpan.innerText = document.getElementsByTagName('span').length;
+    
       //console.log(countSpan, i, count);
       return;
     }
