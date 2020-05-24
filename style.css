@@ -6,8 +6,7 @@ body {
 
 .fix {
     position: fixed;
-    height: 20px;
-    padding: 30px 2px;
+    padding: 30px 2px 0;
     background-color: MintCream;
     z-index: 10;
 }
@@ -30,7 +29,6 @@ body {
 
 .form-title {
     height: 23px;
-    padding-bottom: 15px;
     font-size: larger;
 }
 
@@ -38,7 +36,7 @@ body {
     width: 325px;
     font-size: x-large;
     text-align: center;
-    margin: 0 25px 1rem;
+    margin: 15px 25px 1rem;
 }
 
 #output-span {
