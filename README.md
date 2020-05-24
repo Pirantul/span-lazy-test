@@ -12,7 +12,7 @@ demo: https://span-lazy-test.rusgil.ru/
 During development, I found a bug in the Opera browser. 
 Error demonstration: https://span-lazy-test.rusgil.ru/operawrong/
 getElementsByTag.length - returns 1 more than it should be. (span-lazy-test.rusgil.ru/operawrong/script.js line 38)
-If you enter 10 into input:
-in Opera result - 11 // incorrectly:
-in other browsers result - 10 // correctly
-Generated a bug report message about this error.
+- If you enter 10 into input:
+- in Opera result - 11 // incorrectly:
+- in other browsers result - 10 // correctly
+- Generated a bug report message about this error.
